@@ -1,7 +1,7 @@
 HellKat Manifest
 
 ```
-repo init -u https://github.com/Hellybean/android.git -b cm-11.0
+repo init -u https://github.com/Hellybean/android.git -b cm-11.0-linaro
 
 ```    
 
@@ -9,9 +9,6 @@ repo init -u https://github.com/Hellybean/android.git -b cm-11.0
 repo sync
 vendor/cm/get-prebuilts
 . build/envsetup.sh
-make clean
-breakfast cm_hercules-userdebug
-./boogerpicker/cm-11.0.sh
-mka bacon
+brunch <device>
 ```
 =======
